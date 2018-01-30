@@ -1,4 +1,4 @@
-# Documentation
+﻿# Documentation
 
 ## Convention BEM
 B -> Block
@@ -138,4 +138,4 @@ html {
 * VW: très utiles pour les interfaces fluides.
 
 ## Liens utiles:
-* [Caniuse](http://caniuse.com)  : c'est compatible?
+* [Caniuse](http://caniuse.com)  : c'est compatible avec navigateur?
