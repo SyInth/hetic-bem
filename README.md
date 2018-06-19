@@ -141,7 +141,7 @@ html {
 * [Caniuse](http://caniuse.com)  : c'est compatible avec navigateur?
 
 
-#Font-face
+###Font-face
 Le font-face concerne la typographie du site web. C’est un moyen exercé dans le CSS, qui permet de déclarer une police non-standard dans un site web.
 
 Voici les étapes pour intégrer une police personnalisée dans un site web grâce au code :
@@ -178,7 +178,7 @@ On pourra ensuite coder ainsi, exemple avec une balise de classe ‘header‘ :
 
 ```
 
-#Flexbox grid
+###Flexbox grid
 
 * Grille de 12 colonnes
 
@@ -206,7 +206,7 @@ On pourra ensuite coder ainsi, exemple avec une balise de classe ‘header‘ :
 
 + : Voir la doc --> flexboxgrid.com
 
-#Positions en CSS
+###Positions en CSS
 
  * Absolute : position dépend du parent
 
@@ -216,10 +216,11 @@ On pourra ensuite coder ainsi, exemple avec une balise de classe ‘header‘ :
 
  * Sticky : se comporte comme un élément positionné de façon relative jusqu'à ce que son bloc englobant dépasse un seuil donné (par exemple fourni par la valeur de top) . Devient fixed après
 
-#<wbr>
+###<wbr>
 
 Concordonne avec la propriété CSS white-space
 
 *nowrap (permet le rerour à la ligne)
+
 *normal (peut avoir des coupures entre les mots)
 
