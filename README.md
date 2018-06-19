@@ -139,3 +139,87 @@ html {
 
 ## Liens utiles:
 * [Caniuse](http://caniuse.com)  : c'est compatible avec navigateur?
+
+
+#Font-face
+Le font-face concerne la typographie du site web. C’est un moyen exercé dans le CSS, qui permet de déclarer une police non-standard dans un site web.
+
+Voici les étapes pour intégrer une police personnalisée dans un site web grâce au code :
+
+* Utiliser une police de caractère type True Type (.ttf) ou OpenType (.otf).
+
+* Aller sur un convertisseur comme fontsquirrel.com qui changera le fichier en plusieurs différents (prenons .svg et .woff en exemple de fichier de typographie). Le convertisseur fournira un ensemble de fichiers : 1 fichier .css (feuille de style), 1 fichier .html et des fichiers de typographie.
+
+* Copier le code de la feuille de style puis le coller dans le .css .
+
+* Créer un dossier typo dans un dossier img aussi créé.
+
+* Copier-coller les fichiers de typographie dans le dossier typo.
+
+* Créer un lien dans le fichier.css avec les fichiers (vérifier l’emplacement des fichiers, dans un dossier etc).
+
+
+Exemple de code dans le fichier.css avec une police « NewFont » :
+```css
+@font-face {
+
+	font-family: 'NewFont';
+        url('../img/typo/ NewFont') format('woff'),
+        url('../img/typo/NewFont') format('svg');
+
+}
+```
+On pourra ensuite coder ainsi, exemple avec une balise de classe ‘header‘ :
+
+```css
+.header {
+        font-family : ‘typo’, ‘NewFont’ ;
+}
+
+```
+
+#Flexbox grid
+
+* Grille de 12 colonnes
+
+* adaptable sur tous les écrans
+
+* A ajouter: "flexbox.grid.min.css" dans le dossier styles
+
+* Faire un link dans le head du html (comme une feuille de style)
+
+```HTML
+
+<section>
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+
+			</div>
+
+		</div>
+	</div>
+</section>
+```
+
++ : Voir la doc --> flexboxgrid.com
+
+#Positions en CSS
+
+ * Absolute : position dépend du parent
+
+ * Relative : dépend de l'écran
+
+ * Fixed : comme absolute.  Pour créer un élément flottant qui reste à la même position
+
+ * Sticky : se comporte comme un élément positionné de façon relative jusqu'à ce que son bloc englobant dépasse un seuil donné (par exemple fourni par la valeur de top) . Devient fixed après
+
+#<wbr>
+
+Concordonne avec la propriété CSS white-space
+
+*nowrap (permet le rerour à la ligne)
+*normal (peut avoir des coupures entre les mots)
+
